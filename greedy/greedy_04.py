@@ -4,3 +4,23 @@
 # 최소 과정의 숫자는?
 
 n, k = map(int, input().split())
+
+result = 0
+
+while True:
+    if k == 1:
+        result += n
+        break
+    target = (n//k) * k
+    result += (n-target)
+    n = target
+
+    if n < k:
+        break
+    result += 1
+    n //= k
+if k == 1:
+    result = n
+else:
+    result += (n-1)
+print(result)
