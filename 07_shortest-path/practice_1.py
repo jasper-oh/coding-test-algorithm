@@ -9,7 +9,7 @@ n, m = map(int, input().split())
 start = int(input())
 
 # 각 노드에 연결되어있는 노드에 대한 정보를 담는 리스트를 만들기
-graph = [[]for i in range(n+1)]
+graph = [[]for _ in range(n+1)]
 
 # 방문한적 있는지 체크하는 목적의 리스트를 만들기
 visited = [[False]*(n+1)]
@@ -41,19 +41,19 @@ def dijstra(start):
     visited[start] = True
     for j in graph[start]:
         distance[j[0]] = j[1]
-    for i in range(n-1):
+    for _ in range(n-1):
         now = get_smallest_node()
-        visited(now)= True
+        visited(now) = True
         for j in graph[now]:
             cost = distance[now] + j[1]
-            if cost <distance[j[0]]:
+            if cost < distance[j[0]]:
                 distance[j[0]] = cost
+
 
 dijstra(start)
 
-for i in range(1,n+1):
+for i in range(1, n+1):
     if distance[i] == INF:
         print("INFINITY")
     else:
         print(distance[i])
-

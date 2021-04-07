@@ -1,12 +1,16 @@
 import heapq
 import sys
+
+# print("input== readline")
 input = sys.stdin.readline
 INF = int(1e9)
 
+# print("input== map")
 n, m = map(int, input().split())
 start = int(input)
 
-graph = [[] for i in range(n+1)]
+graph = [[] for _ in range(n+1)]
+
 
 distance = [INF] * (n+1)
 
@@ -16,19 +20,25 @@ for _ in range(m):
 
 
 def dijkstra(start):
+    # q 라는 배열을 먼저 선언을 한다음에
     q = []
+
+    # heapq.heappush(q 배열, )
     heapq.heappush(q, (0, start))
     distance(start) = 0
-    while q:
-        dist, now = heapq.heappop(q)
 
+    # 배열 q 이기 때문에 일단 항상 참이라고 생각하고, 진행되다가
+    while q:
+        # heappop 으로 q의 배열을 계속 지우면서 q가 없어지는데, 다 없어질때 까지 진행되는 것이라고 볼 수 있다.
+        dist, now = heapq.heappop(q)
         if distance[now] < dist:
             continue
+
         for i in graph[now]:
             cost = dist + i[1]
 
             if cost < distance[i[0]]:
-                distnace[i[0]] = cost
+                distance[i[0]] = cost
                 heapq.heappush(q, (cost, i[0]))
 
 
