@@ -1,3 +1,9 @@
+/* Input: nums = [555,901,482,1771]
+       Output: 1
+       Only 1771 contains an even number of digits.
+       1 <= nums.length <= 500
+       1 <= nums[i] <= 10^5
+*/
 public class FindNumbersWithEvenNumberOfDigits {
     public int findNumbers(int[] nums1) {
         int count = 0;
