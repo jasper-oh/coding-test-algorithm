@@ -7,9 +7,10 @@ public class Main {
         1 <= nums.length <= 105
         nums[i] is either 0 or 1.
     */
-    MaxConsecutiveOnes mco = new MaxConsecutiveOnes();
-    int[] nums = {1,1,0,1,1,1};
-    mco.findMaxConsecutiveOnes(nums);
+        MaxConsecutiveOnes mco = new MaxConsecutiveOnes();
+        int[] nums = {1,1,0,1,1,1};
+        int answer =  mco.findMaxConsecutiveOnes(nums);
+        System.out.println(answer);
 
     /* Input: nums = [555,901,482,1771]
        Output: 1
@@ -18,9 +19,9 @@ public class Main {
        1 <= nums[i] <= 10^5
     */
 
-    FindNumbersWithEvenNumberOfDigits fd = new FindNumbersWithEvenNumberOfDigits();
-    int[] nums1 = {555,901,482,1771};
-    fd.findNumbers(nums1);
+//    FindNumbersWithEvenNumberOfDigits fd = new FindNumbersWithEvenNumberOfDigits();
+//    int[] nums1 = {555,901,482,1771};
+//    fd.findNumbers(nums1);
 
     /* Input: nums = [-4,-1,0,3,10]
         Output: [0,1,9,16,100]
