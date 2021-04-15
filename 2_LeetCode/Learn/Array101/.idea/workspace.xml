@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="746e6c22-d50c-40c0-9251-a5476393f761" name="Default Changelist" comment="" />
+    <list default="true" id="d56b2c5d-bd14-481e-9dd2-8a000ff9faf5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/1_Introduction/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +17,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="1rCyYkmAMzl8m2lEnzcLhtfdbh9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1rCzqjBQwoHRsHwfFMzKPYNqeHS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,12 +35,23 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="746e6c22-d50c-40c0-9251-a5476393f761" name="Default Changelist" comment="" />
-      <created>1618494419971</created>
+      <changelist id="d56b2c5d-bd14-481e-9dd2-8a000ff9faf5" name="Default Changelist" comment="" />
+      <created>1618495052431</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1618494419971</updated>
+      <updated>1618495052431</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
