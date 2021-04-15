@@ -7,7 +7,7 @@ public class Main {
         1 <= nums.length <= 105
         nums[i] is either 0 or 1.
     */
-        MaxConsecutiveOnes mco = new MaxConsecutiveOnes();
+        MaxConsecutive mco = new MaxConsecutive();
         int[] nums = {1,1,0,1,1,1};
         int answer = mco.findMaxConsecutiveOnes(nums);
         System.out.println(answer);
@@ -19,9 +19,10 @@ public class Main {
        1 <= nums[i] <= 10^5
     */
 
-//    FindNumbersWithEvenNumberOfDigits fd = new FindNumbersWithEvenNumberOfDigits();
-//    int[] nums1 = {555,901,482,1771};
-//    fd.findNumbers(nums1);
+    FindNumbersWithEvenNumberOfDigits fd = new FindNumbersWithEvenNumberOfDigits();
+    int[] nums1 = {555,901,482,1771};
+    int answer1 = fd.findNumbers(nums1);
+    System.out.println(answer1);
 
     /* Input: nums = [-4,-1,0,3,10]
         Output: [0,1,9,16,100]
@@ -32,48 +33,7 @@ public class Main {
     }
 }
 
-class MaxConsecutiveOnes {
-    public int findMaxConsecutiveOnes(int[] nums) {
-        int consecutive = 0;
-        int count= 0;
-        for(int i = 0;i < nums.length;++ i) {
-            if(nums[i] == 1) {
-                consecutive += 1;
-            }
-            else
-            if(count <= consecutive) {
-                count = consecutive;
-                consecutive = 0;
-            }
-            else
-                consecutive = 0;
-        }
-        if(count < consecutive) {
-            count = consecutive;
-        }
-        return count;
-    }
-}
 
-class FindNumbersWithEvenNumberOfDigits {
-    public int findNumbers(int[] nums1) {
-        int count = 0;
-        int evenNumber = 0;
-        for(int i = 0;i < nums1.length;++ i) {
-            int number = nums1[i];
-            count = 0;
-            while(number > 0) {
-                number = number / 10;
-                ++ count;
-            }
-            if(count % 2 == 0) {
-                evenNumber += 1;
-            }
-        }
-        return evenNumber;
-    }
-}
 
-class SquaresOfSortedArray {
 
-}
+
