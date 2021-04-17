@@ -5,6 +5,21 @@
 */
 
 public class SquaresOfSortedArray {
+    public int[] sortedSquares(int[] nums) {
 
+        int startIdx = 0;
+        int endIdx = nums.length -1;
+        int[] result = new int[nums.length];
+        for (int idx=endIdx; idx>= 0; idx--){
+            if(Math.abs(nums[startIdx]) > Math.abs(nums[endIdx])){
+                result[idx] = nums[startIdx] * nums[startIdx];
+                startIdx++;
+            }else{
+                result[idx] = nums[endIdx] * nums[endIdx];
+                endIdx--;
+            }
+        }
+        return result;
+    }
 
 }
