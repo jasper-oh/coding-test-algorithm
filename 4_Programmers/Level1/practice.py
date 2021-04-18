@@ -1,8 +1,8 @@
 n = 123854
 
-b = ''.join(sorted(str(n), reverse=True))
+# b = ''.join(sorted(str(n), reverse=True))
 
-print(b)
+# print(b)
 
 
 def solution(n):
