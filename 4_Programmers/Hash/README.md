@@ -1,7 +1,5 @@
 ## 🙋‍♂️ Basic concept with python data structure
 
----
-
 #### 1. list 자료형
 
 자바의 배열 기능을 포함, 내부적으로 연결 리스트 자료구조를 채택하고 있어서 append(),remove() 등의 메소드 지원
