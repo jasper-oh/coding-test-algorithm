@@ -1,37 +1,27 @@
-# answerF = ["119", "97674223", "1195524421"]
 
-lst1 = [1, 2, 3]
-lst2 = ["one", "two", "three"]
-cLst = set(zip(lst1, lst2))
-
-
-print(cLst)
-
-print(type(cLst))
-
-a = [(1, 2), (2, 3), (3, 4)]
-b = {1: "one", 2: "two", 3: "three"}
-c = {(1, "one"), (2, "two"), (3, "three")}
+# phone_book = ["119", "97674223", "1195524421"]
+phone_book = ["123", "456", "789"]
+# phone_book = ["119", "97674223", "1195524421"]
 
 
-lst2 = ["one", "two", "three"]
-lst4 = {(), (), ()}
-# lst4 = [(1, "one"), (2, "two"), (3, "three")]
-# lst5 = ((1, "one"), (2, "two"), (3, "three"))
-# print(type(lst3))
-# print(type(lst4))
-
-# print(type(cLst))
-
-cLst = set(cLst)
-print(type(c))
-# print(type(lst1))
-# print(type(lst4))
-# print(type(lst3))
-# print(type(cLst))
-# print(cLst)
+# def solution(phone_book):
+#     for phone in phone_book:
+#         temp = ''
+#         for num in phone:
+#             temp += num
+#             if temp in phone_book and temp != phone:
+#                 return False
+#     return True
 
 
-# for p1, p2 in zip(answerF, answerF[1:]):
-#     if p2.startswith(p1):
-#         print(False)
+# print(solution(phone_book))
+
+#  startswith 함수를 사용해서 시작되는 값들을 지정 할 수 있다!
+
+def solution(phone_book):
+    phone_book = sorted(phone_book)
+
+    for p1, p2 in zip(phone_book, phone_book[1:]):
+        if p2.startswith(p1):
+            return False
+    return True
