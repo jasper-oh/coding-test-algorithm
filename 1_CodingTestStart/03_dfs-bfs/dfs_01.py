@@ -1,3 +1,7 @@
+# 실전 문제 3
+#  n, m 크기의 얼음 틀 구멍이 있는 곳 0, 칸막이 1 -> Input
+#  만들어지는 얼음의 수
+
 n, m = map(int, input().split())
 
 graph = []
