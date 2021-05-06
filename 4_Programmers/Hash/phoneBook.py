@@ -7,7 +7,9 @@ phone_book = ["123", "456", "789"]
 # def solution(phone_book):
 #     for phone in phone_book:
 #         temp = ''
-#         for num in phone:
+#
+#
+#   for num in phone:
 #             temp += num
 #             if temp in phone_book and temp != phone:
 #                 return False

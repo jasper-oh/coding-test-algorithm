@@ -45,3 +45,57 @@ randrange(start, stop, step)
 ```
 
 ---
+
+#### 자료 구조 기초
+
+1. Stack
+
+```python
+
+> 상자 쌓기를 생각하면 된다.
+
+stack = []
+
+stack.append(5)
+stack.append(2)
+stack.append(1)
+stack.pop()
+stack.append(4)
+stack.append(7)
+stack.pop()
+
+print(stack) # 최하단 원소부터 출력
+print(stack[::-1]) # 최상단 원소부터 출력
+
+#[5,2,4]
+#[4,2,5]
+
+```
+
+2. Queue
+
+> 외부 라이브러리를 사용해야 한다. => deque
+> 놀이공원 줄서기를 생각
+
+```python
+
+from collections import deque
+
+queue = deque()
+
+queue.append(5)
+queue.append(2)
+queue.append(1)
+queue.popleft()
+queue.append(4)
+queue.append(7)
+queue.popleft()
+
+print(queue) # 먼저 들어온 원소부터 출력
+queue.reverse()
+print(queue) # 나중에 들어온 원소부터 출력
+
+# deque([1,4,7])
+# deque([7,4,1])
+
+```
