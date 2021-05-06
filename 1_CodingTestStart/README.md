@@ -8,6 +8,7 @@
 list(map(int,input().split()))
 
 ```
+
 2. 빠르게 입력 받기
 
 ```python
@@ -15,8 +16,9 @@ import sys
 sys.stdin.readline().rstrip()
 
 ```
+
 - rstrip()
-    - readline() 시에 줄바꿈 기호로 입력된 공백 문자 제거
+  - readline() 시에 줄바꿈 기호로 입력된 공백 문자 제거
 
 ---
 
@@ -43,15 +45,3 @@ randrange(start, stop, step)
 ```
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
