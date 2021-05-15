@@ -1,3 +1,7 @@
+# 2021/05/22 CheckAgain and find solution
+# Check another solution for making awesomeness!
+
+# Maybe making 다익스트라 algo for making fast?
 # 대기실은 5개이며, 각 대기실은 5x5 크기입니다.
 # 거리두기를 위하여 응시자들 끼리는 맨해튼 거리가 2이하로 앉지 말아주세요.
 # 단 응시자가 앉아 있는 자리 사이가 파티션으로 막혀 있을 경우에는 허용합니다.
