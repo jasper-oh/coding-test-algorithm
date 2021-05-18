@@ -43,3 +43,9 @@ Main Lang for CodingTest -> Python
 ---
 
 ![Programmers Badge](https://img.shields.io/badge/Programmers-ffffff?style=for-the-badge&logoColor=black)
+
+---
+
+#### Test Experience
+
+1. CodingTest KAKAO Intern
