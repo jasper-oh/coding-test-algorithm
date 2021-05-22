@@ -1,3 +1,7 @@
+# 2021/05/22 CheckAgain and find solution
+# Check another solution for making awesomeness!
+
+
 # "one4seveneight" -> 1478
 # "23four5six7" -> 234567
 # "2three45sixseven" -> 234567
