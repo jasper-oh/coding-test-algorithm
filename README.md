@@ -4,6 +4,8 @@
 
 #### 🛠 Tool : Python 🐍 & Java ☕️
 
+Main Lang for CodingTest -> Python
+
 ---
 
 #### CodingTestStart 📖
