@@ -7,35 +7,29 @@ class ListNode:
 
 
 class Solution:
-    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+    def addTwoNumbers(self, l1, l2):
 
-        l1_value = 0
-        l2_value = 0
+        result = ListNode(0)
 
-        num = 1
-        while l1:
-            l1_value += l1.val*num
-            l1 = l1.next
-            num *= 10
+        result_tail = result
 
-        num = 1
+        carry = 0
 
-        while l2:
-            l2_value += l2.val*num
-            l2 = l2.next
-            num *= 10
+        while l1 or l2 or carry:
 
-        out_value = l1_value + l1_value
+            val1 = (l1.val if l1 else 0)
+            val2 = (l2.val if l2 else 0)
 
-        header = None
-        linked_list = None
+            #  진행을 하면서 할것들
+            carry, out = divmod(val1 + val2 + carry, 10)
 
-        for c in str(out_value):
-            if not header:
-                header = ListNode(int(c))
-                linked_list = header
-            else:
-                curNode = ListNode(int(c), linked_list)
-                linked_list = curNode
+            #  진행을 여기서 부터 한다
+            result_tail.next = ListNode(out)
 
-        return linked_list
+            result.next = result_tail.next
+
+            # 여기 까지 진행 할것이다.
+            l1 = (l1.next if l1 else None)
+            l2 = (l2.next if l1 else None)
+
+        return result
