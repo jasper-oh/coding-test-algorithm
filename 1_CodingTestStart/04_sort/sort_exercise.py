@@ -74,7 +74,7 @@ print(array)
 #         break
 
 
-array = "Something"
+array = "SomethingAweSome"
 code = []
 for i in array:
     code.append(ord(i))
