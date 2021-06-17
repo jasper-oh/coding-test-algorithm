@@ -1,5 +1,4 @@
 # 2021/05/22 CheckAgain and find solution
-# Check another solution for making awesomeness!
 
 
 # "one4seveneight" -> 1478
