@@ -22,9 +22,9 @@ def solution(seconds):
 
     i = 0
 
-    for menu in menu_time_list:
-
-        i += seconds // menu
+    while seconds > 0:
+        if seconds % 300 == 0:
+            i = 1
 
     return i
 
