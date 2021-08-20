@@ -49,3 +49,4 @@ Main Lang for CodingTest -> Python
 #### Test Experience
 
 1. CodingTest KAKAO Intern (21/05/08) - RESULT 3/5 - FAIL
+1. CodingTest Toss (21/08/15) - RESULT 3/6 - ?
