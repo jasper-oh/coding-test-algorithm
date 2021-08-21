@@ -1,4 +1,5 @@
 #  이진 탐색
+# 코딩 테스트 문제에도 나옴.
 
 def binary_search(array, target, start, end):
     while start <= end:
