@@ -1,5 +1,6 @@
 # 이진 탐색
 
+# 재귀 방식으로도 구현 가능한데 한번 해보자.
 n, m = list(map(int, input().split()))
 
 array = list(map(int, input().split()))
