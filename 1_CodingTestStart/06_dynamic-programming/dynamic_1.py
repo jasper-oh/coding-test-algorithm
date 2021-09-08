@@ -1,4 +1,4 @@
-
+# Dynamic Algorithms
 x = int(input())
 
 d = [0] * 100
