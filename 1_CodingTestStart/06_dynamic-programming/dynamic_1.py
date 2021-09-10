@@ -1,4 +1,6 @@
 # Dynamic Algorithms
+
+# Understanding Basic of Dynamic Algorithms
 x = int(input())
 
 d = [0] * 100
